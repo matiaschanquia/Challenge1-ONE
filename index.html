@@ -9,7 +9,40 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <main class="main">
+        <h1 class="titulo-alura"><img src="./img/logo-alura.png" alt="logo alura"></h1>
+
+        <div class="container-main">
+            <section class="izquierda">
+                <textarea name="textarea-input" id="textarea-input" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="inferior-izquierda">
+                    <p><img src="./img/danger.png" alt="danger"> Solo letras minúsculas y sin acentos.</p>
+                    <div class="botones-input">
+                         <button id="btn-encriptar">Encriptar</button>
+                         <button id="btn-desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="derecha">
+                <div class="sin-mensaje active">
+                    <img src="./img/muñeco.png" alt="buscando mensaje">
+                    <h3>Ningún mensaje fue encontrado</h3>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <div class="con-mensaje">
+                    <textarea name="textarea-output" id="textarea-output" readonly></textarea>
+                    <button id="btn-copiar">Copiar</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="links-redes">
+            <a href="https://www.linkedin.com/in/matias-chanquia/" target="_blank"><img src="./img/linkedin.png" alt="linkedin"></a>
+            <a href="https://github.com/matiaschanquia" target="_blank"><img src="./img/github.png" alt="github"></a>
+        </div>
+        <p>&copy; Matias Chanquia - Oracle y Alura - 2022 </p>
+    </footer>
 
     <script src="./app.js"></script>
 </body>

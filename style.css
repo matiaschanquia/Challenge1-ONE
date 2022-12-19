@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EFF1FA;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+    margin: 20px;
+    display: flex;
+}
+
+.titulo-alura > img {
+    width: 110px;
+}
+
+.container-main {
+    flex-grow: 999;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.izquierda {
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+}
+
+#textarea-input {
+    flex-grow: 999;
+    margin-top: 80px;
+    margin-bottom: 13px;
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    outline: none;
+    color: #0A3871;
+    resize: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#textarea-input::placeholder {
+    font-family: 'Open Sans', sans-serif;
+    color: #0A3871;
+}
+
+.inferior-izquierda {
+    margin-bottom: 20px;
+}
+
+.inferior-izquierda > p {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.inferior-izquierda > p > img {
+    width: 20px;
+}
+
+.botones-input {
+    margin-top: 12px;
+    display: flex;
+    gap: 10px 20px;
+}
+
+#btn-encriptar, 
+#btn-desencriptar,
+#btn-copiar {
+    flex-grow: 999;
+    border-radius: 18px;
+    font-size: 17px;
+    font-weight: 100;
+    cursor: pointer;
+    padding: 13px 0;
+}
+
+#btn-encriptar {
+    background-color: #0A3871;
+    color: #fff;
+}
+
+#btn-desencriptar {
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    background-color: #D8DFE8;
+}
+
+.derecha {
+    width: 38%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px 15px;
+    display: flex;
+    box-shadow: 0px 5px 7px 2px rgba(0, 0, 0, 0.065);
+}
+
+.sin-mensaje {
+    margin: auto;
+    display: none;
+    text-align: center;
+}
+
+.sin-mensaje.active {
+    display: block;
+}
+
+.sin-mensaje > img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.sin-mensaje > h3 {
+    font-weight: 900;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.sin-mensaje > p {
+    font-size: 14px;
+}
+
+.con-mensaje {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.con-mensaje.active {
+    display: flex;
+}
+
+#textarea-output {
+    flex-grow: 999;
+    resize: none;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: default;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+}
+
+#btn-copiar {
+    flex-grow: 0;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+.links-redes {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.links-redes > a > img {
+    height: 40px;
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.7));
+    transition: filter .3s ease-in-out;
+}
+
+.links-redes > a > img:hover {
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.7));
+}
+
+.footer {
+    background-color: #343A40;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer > p {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+    .titulo-alura > img {
+        margin-left: -40px;
+    }
+    .container-main {
+        flex-direction: column;
+    }
+    .izquierda {
+        width: 100%;
+        height: 70vh;
+    }
+    .derecha {
+        width: 100%;
+    }
+    .sin-mensaje > img {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .botones-input {
+        flex-direction: column;
+    }
+}
