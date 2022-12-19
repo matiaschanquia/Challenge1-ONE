@@ -10,6 +10,8 @@ const input = document.querySelector("#textarea-input");
 const output = document.querySelector("#textarea-output");
 
 let primeraVez = true;
+input.focus();
+
 
 function encriptar() {
     if(primeraVez) {
