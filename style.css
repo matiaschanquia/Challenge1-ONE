@@ -206,6 +206,9 @@ body {
     .sin-mensaje > img {
         display: none;
     }
+    #textarea-output {
+        height: 200px;
+    }
 }
 
 @media (max-width: 575px) {
